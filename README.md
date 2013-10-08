@@ -12,11 +12,11 @@ the second parameter:
 
 To construct a basic auth token from a user name and password, simply use this function:
 
-make_base_auth: function (user, password) {
-		var tok = user + ':' + password;
-		var hash = window.btoa(tok);
-		return "Basic " + hash;
-}
+	make_base_auth: function (user, password) {
+			var tok = user + ':' + password;
+			var hash = window.btoa(tok);
+			return "Basic " + hash;
+	}
 							
 
 
