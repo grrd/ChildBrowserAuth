@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.cloudexplorers.phonegap.childbrowserauth"
+    id="com.cloudexplorers.plugins.childbrowserauth"
     version="1.0.0">
 
     <name>Child Browser with Basic Auth</name>
@@ -24,7 +24,7 @@
     <!-- android -->
     <platform name="android">
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <activity android:name="com.phonegap.plugins.childBrowser.ChildBrowser"
+            <activity android:name="com.cloudexplorers.plugins.childbrowser.ChildBrowser"
                       android:label="@string/app_name">
                 <intent-filter>
                 </intent-filter>
@@ -34,16 +34,16 @@
         <!-- Cordova 1.5 - 1.9 -->
         <config-file target="res/xml/plugins.xml" parent="/plugins">
             <plugin name="ChildBrowser"
-                value="com.phonegap.plugins.childBrowser.ChildBrowser"/>
+                value="com.cloudexplorers.plugins.childbrowser.ChildBrowser"/>
         </config-file>
 
         <!-- Cordova >= 2.0.0 -->
         <config-file target="res/xml/config.xml" parent="plugins">
             <plugin name="ChildBrowser"
-                value="com.phonegap.plugins.childBrowser.ChildBrowser"/>
+                value="com.cloudexplorers.plugins.childBrowser.ChildBrowser"/>
         </config-file>
 
-        <source-file src="src/android/com/phonegap/plugins/childBrowser/ChildBrowser.java" target-dir="src/com/phonegap/plugins/childBrowser"/>
+        <source-file src="src/android/com/cloudexplorers/plugins/childbrowser/ChildBrowser.java" target-dir="src/com/cloudexplorers/plugins/childbrowser"/>
     </platform>
     <!-- ios -->
     <platform name="ios">

@@ -5,7 +5,7 @@
  * Copyright (c) 2005-2011, Nitobi Software Inc.
  * Copyright (c) 2010-2011, IBM Corporation
  */
-package com.phonegap.plugins.childBrowser;
+package com.cloudexplorers.plugins.childBrowser;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -145,8 +145,6 @@ public class ChildBrowser extends Plugin {
       // set up some things on the connection
       urlConnection.setRequestMethod("GET");
       urlConnection.setDoOutput(true);
-
-      //String encodedCredentials = Base64.encodeToString(new String("admin" + ":" + "1234").getBytes(), Base64.DEFAULT);
 
       urlConnection.setRequestProperty("Authorization", encodedCredentials);
 
